@@ -1,9 +1,6 @@
 
 /*FUNCTIONS*/
 :root {
-    --encadreOr: url(ASSETS/PICTURES/COURONNE_ENCADREMENT/or.PNG);
-    --encadreArgent: url(ASSETS/PICTURES/COURONNE_ENCADREMENT/argent.PNG);
-    --encadreBronze: url(ASSETS/PICTURES/COURONNE_ENCADREMENT/bronze.PNG);
     --h2color: #F7d636;
     --h3color: hsl(17, 100%, 94%);
 }
@@ -134,12 +131,15 @@ main :nth-child(1){
 
 /* TABLEAU*/
 
+
+
 main :nth-child(2) table {
     color: #FFEAE2;
     font-size: 2.4em;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 h2 {
@@ -154,6 +154,7 @@ h2 {
 
 th, td{
     padding: 20px;
+
 }
 
 article table td img {
