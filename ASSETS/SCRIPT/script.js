@@ -1,91 +1,93 @@
+import { scores } from './scores.js';
 
 const table = document.querySelector('table tbody');
-const ligneTableaux = Array.from(table.querySelectorAll("tr"));
-let ligneArray = [];
-console.log(ligneTableaux);
+
+function createRowScore(index, score) {
+    const row = document.createElement('tr');
+
+    row.innerHTML = `
+        <td>${index}</td>
+        <td>${score.username}</td>
+        <td>${score.score}</td>
+        <td><img src="${score.img}" alt"${score.username}"</td>
+        <input type="number" placeholder="Entrer le score" name="number"/>
+    `;
+
+    table.append(row);
+}
+
+scores.forEach((score, index) => {
+    createRowScore(index+1, score);
+});
+
+// btn = document.createElement('button');
+// btn.
 
 
 
-ligneTableaux.forEach(function(ligne){
-    let fourElement = parseInt(ligne.querySelectorAll("td")[3].textContent);
-    ligneArray.push({ ligne: ligne, score: fourElement });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const ligneTableaux = Array.from(table.querySelectorAll("tr"));
+// let ligneArray = [];
+// console.log(ligneTableaux);
+
+
+
+// ligneTableaux.forEach(function(ligne){
+//     let fourElement = parseInt(ligne.querySelectorAll("td")[3].textContent);
+//     ligneArray.push({ ligne: ligne, score: fourElement });
    
-});
- ligneArray.sort();
-    let rank = ligneArray;
-    rank.reverse();
-console.log(ligneArray);
-
-table.innerHTML = "";
-
-ligneArray.forEach(function(item) {
-    table.appendChild(item.ligne);  
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// });
+//  ligneArray.sort();
+// let rank = ligneArray;
+// rank.reverse();
+// console.log(ligneArray);
+
+// table.innerHTML = "";
+
+// ligneArray.forEach(function(item) {
+//     table.appendChild(item.ligne);  
+// });
 
 
 
